@@ -76,6 +76,7 @@ else
 
     mkdir -p "$TARGET_DIR"
 
-    curl -L "$ARTIFACT_URL" | tar -zxv -C "$TARGET_DIR"
+    # curl -L "$ARTIFACT_URL" | tar -zxv -C "$TARGET_DIR"
+    curl -L "https://hub.gitmirror.com/https://github.com/yetone/avante.nvim/releases/download/v0.0.15/avante_lib-linux-x86_64-luajit.tar.gz" | tar -zxv -C "$TARGET_DIR"
 fi
 
